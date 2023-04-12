@@ -1,4 +1,136 @@
 <!-- ============================================================== -->
+<!-- Image and chart -->
+<!-- ============================================================== -->
+<div fxLayout="row wrap">
+  <!-- Column-->
+  <div fxFlex.gt-lg="25" fxFlex.gt-md="33" fxFlex.gt-xs="100" fxFlex="100">
+      <mat-card class="oh">
+          <img mat-card-image src="assets/images/big/rbi-2.jpg" style="max-height: 300px;margin-top: -54px;" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+              <p>
+                Back
+                RBI issues detailed norms for outsourcing of IT services by banks, NBFCs
+              </p>
+              <div fxLayout="row" fxLayoutWrap="wrap" class="m-t-30">
+                <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                    <small> 11 Apr 2023</small>
+                </div>
+                 
+            </div>
+               
+          </mat-card-content>
+      </mat-card>
+  </div>
+     <!-- Column-->
+  <div fxFlex.gt-lg="25" fxFlex.gt-md="33" fxFlex.gt-xs="100" fxFlex="100">
+    <mat-card class="oh">
+        <img mat-card-image src="assets/images/big/kbl-1.jpg" style="max-height: 300px;" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+              Karnataka Bank revises fixed deposit (FD) rates, now earn as high as 7.30% on 375 days tenor
+            </p>
+            <div fxLayout="row" fxLayoutWrap="wrap" class="m-t-30">
+              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                  <small> 13 Apr 2023</small>
+              </div>
+               
+          </div>
+             
+        </mat-card-content>
+    </mat-card>
+</div>
+  <!-- Column-->
+  <div fxFlex.gt-lg="25" fxFlex.gt-md="33" fxFlex.gt-xs="100" fxFlex="100">
+    <mat-card class="oh">
+        <img mat-card-image src="assets/images/big/kbl-3.gif" style="max-height: 300px;margin-top: 0px;" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+              Karnataka Bank plans to achieve a growth of 17.69 per cent in its centenary year of 2023-24 ...
+
+            </p>
+            <div fxLayout="row" fxLayoutWrap="wrap" class="m-t-30">
+              <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                  <small> 17 Apr 2023</small>
+              </div>
+               
+          </div>
+             
+        </mat-card-content>
+    </mat-card>
+</div>
+<div style="width: 100%;margin-top: -35px;">
+ <div style=" float: right; margin-bottom: 15px;margin-right: 15px;">
+   <button mat-icon-button color="primary">
+     <mat-icon aria-label="Example icon-button with a heart icon">arrow_back_ios</mat-icon>
+    </button>
+    <button mat-icon-button color="primary">
+      <mat-icon aria-label="Example icon-button with a heart icon">arrow_forward_ios</mat-icon>
+    </button>
+  </div>
+</div>
+</div>
+
+
+<!-- ============================================================== -->
+<!-- Colored Card row-->
+<!-- ============================================================== -->
+<div fxLayout="row wrap">
+  <div fxFlex.gt-sm="33.33%" fxFlex="100">
+      <mat-card>
+          <mat-card-header class="bg-primary text-white">
+              <mat-card-title>
+                <mat-icon class="card-icon">calendar_month</mat-icon> Upcoming Events</mat-card-title>
+          </mat-card-header>
+          <mat-nav-list>
+       
+              <mat-list-item (click)="onSelect(message)" [class.active]="message === selectedMessage"
+                *ngFor="let message of messagesLatest">
+                
+                <h3 matLine> {{message.title}} </h3>
+                <p matLine class="text-muted"> {{message.subject}} </p>
+                <p matLine class="text-muted"> {{message.date}} </p>
+              </mat-list-item>
+            </mat-nav-list>
+           
+      </mat-card>
+  </div>
+  <div fxFlex.gt-sm="33.33%" fxFlex="100">
+      <mat-card>
+          <mat-card-header class="bg-info text-white">
+              <mat-card-title><mat-icon class="card-icon">trending_up</mat-icon> KBL Stocks</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <b>NSE</b>
+            <p>₹129.70 0.39% +0.50 Today</p>                
+            <b>BOM</b>
+            <p>₹129.85 0.40% +0.50 Today</p>  
+            <b>₹ 82.0565</b>
+          <p>USD / INR </p>    
+          </mat-card-content>
+      </mat-card>
+  </div>
+  <div fxFlex.gt-sm="33.33%" fxFlex="100">
+    <mat-card>
+        <mat-card-header class="bg-danger text-white">
+            <mat-card-title><mat-icon class="card-icon">shield</mat-icon>Gold price</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <b>₹ 62,290.00</b>
+          <p>24K Gold / 10gm          </p>                
+          <br>
+          <b>₹ 61,300.00</b>
+          <p>22K Gold / 10gm          </p> 
+          <br>
+          <br>
+          
+        </mat-card-content>
+    </mat-card>
+</div>
+   
+</div>
+
+
+<!-- ============================================================== -->
 <!-- Simple four boxes Row -->
 <!-- ============================================================== -->
 <div fxLayout="row wrap">
