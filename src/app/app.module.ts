@@ -17,6 +17,8 @@ import { DemoMaterialModule } from './demo-material-module';
 
 import { SharedModule } from './shared/shared.module';
 import { SpinnerComponent } from './shared/spinner.component';
+import { CircularComponent } from './layouts/circular/circular.component';
+import { CircularHeaderComponent } from './layouts/circular/header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SpinnerComponent } from './shared/spinner.component';
     FullComponent,
     AppHeaderComponent,
     SpinnerComponent,
-    AppSidebarComponent
+    AppSidebarComponent,
+    CircularComponent,
+    CircularHeaderComponent
   ],
   imports: [
     BrowserModule,

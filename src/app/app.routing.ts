@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { CircularComponent } from './layouts/circular/circular.component';
 
 import { FullComponent } from './layouts/full/full.component';
 
@@ -20,6 +21,16 @@ export const AppRoutes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+      } 
+    ]
+  },
+  {
+    path: '',
+    component: CircularComponent,
+    children: [
+      {
+        path: 'circular',
+        loadChildren: () => import('./circular/circular.module').then(m => m.CircularModule)
       }
     ]
   }
