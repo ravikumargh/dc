@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {Router} from "@angular/router"
 
 @Component({
@@ -7,8 +7,12 @@ import {Router} from "@angular/router"
   styleUrls: []
 })
 export class AppHeaderComponent {
- 
-  constructor(private router: Router) { }
+  @Input() sidenav: any;
+  
+  constructor(private router: Router) { 
+  console.log(this.sidenav);
+
+  }
   openAppsPage(){
     this.router.navigate(['/apps'])
   }
