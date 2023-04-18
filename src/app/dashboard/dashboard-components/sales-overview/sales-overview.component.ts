@@ -41,11 +41,11 @@ export class SalesOverviewComponent implements OnInit {
       series: [
         {
           name: "Pixel",
-          data: [44, 55, 57, 56, 61, 58],
+          data: [44, 55, 57, 56, 61, 58, 61],
         },
         {
           name: "Ample",
-          data: [76, 85, 101, 98, 87, 105],
+          data: [76, 85, 101, 98, 87, 105, 110],
         },
       ],
       chart: {
@@ -72,7 +72,7 @@ export class SalesOverviewComponent implements OnInit {
         colors: ["transparent"],
       },
       xaxis: {
-        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
       },
 
       legend: {

@@ -2,14 +2,26 @@
 <!-- ============================================================== -->
 <!-- Profile - style you can find in header.scss -->
 <!-- ============================================================== -->
+<button mat-button color="Basic" (click)="openAppsPage()">
+    <mat-icon aria-label="Example icon-button with a heart icon">window</mat-icon> Apps
+</button>
+<button mat-button color="Basic" (click)="openPeoplePage()">
+    <mat-icon aria-label="Example icon-button with a heart icon">group</mat-icon> People
+</button>
+<button mat-button color="Basic" (click)="openNewsPage()">
+    <mat-icon aria-label="Example icon-button with a heart icon">feed</mat-icon> News
+</button>
+<button mat-button color="Basic" >
+    <mat-icon aria-label="Example icon-button with a heart icon">link</mat-icon> Popular links
+</button>
+ 
 <button [matMenuTriggerFor]="profile" mat-icon-button class="m-r-5"> <img src="assets/images/users/1.jpg" alt="user" class="profile-pic"> </button>
 <mat-menu #profile="matMenu" class="mymegamenu">
     <button mat-menu-item>
         <mat-icon>settings</mat-icon> Settings </button>
     <button mat-menu-item>
         <mat-icon>account_box</mat-icon> Profile </button>
-    <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon> Disable notifications </button>
+     
     <button mat-menu-item>
         <mat-icon>exit_to_app</mat-icon> Sign Out </button>
 </mat-menu>

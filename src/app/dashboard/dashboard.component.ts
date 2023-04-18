@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { MatCarousel, MatCarouselComponent } from 'ng-mat-carousel';
 
 @Component({
 	selector: 'app-dashboard',
@@ -6,34 +7,17 @@ import { Component, AfterViewInit } from '@angular/core';
 	styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements AfterViewInit {
-	messages = [{
-		title: 'Financial Results/Dividend',
-		subject: 'To consider and approve the financial results for the period ended March 31, 2023 and dividend, if any',
-		date: '12-Apr-2023'
-	},
-	{
-		title: 'Dividend/Other business matters',
-		subject: 'To consider dividend and other business matters',
-		date: '13-Apr-2023'
-	},
-	{
-		title: 'Other business matters',
-		subject: 'To consider and approve the financial results for the period ended March 31, 2023 and dividend, if any',
-		date: '12-Apr-2023'
-	},
-	{
-		title: 'Financial Results/Dividend',
-		subject: 'To consider and approve the financial results for the period ended March 31, 2023 and dividend, if any',
-		date: '12-Apr-2023'
-	},
-	{
-		title: 'Financial Results/Dividend',
-		subject: 'To consider and approve the financial results for the period ended March 31, 2023 and dividend, if any',
-		date: '12-Apr-2023'
-	}];
-		
-    messagesLatest: Object[] = this.messages.slice(0, 3);
-	
+	slides = [{
+		image:'assets/images/big/kbl-b-1.jpg'
+	},{
+		image:'assets/images/big/kbl-b-2.jpg'
+	},{
+		image:'assets/images/big/kbl-b-3.jpg'
+	}
+	];
+	 
+	 
+	  
 	ngAfterViewInit() { }
 
 }

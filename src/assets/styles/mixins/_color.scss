@@ -9,6 +9,8 @@ $color-array:(primary: $primary,
   dark: $dark,
   muted: $muted,
   white: $white,
+  green: $green,
+  red: $red,
 );
 
 @each $color-name,

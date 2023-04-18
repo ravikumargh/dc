@@ -16,6 +16,10 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { TestComponent } from './test/test.component';
+import { ApplicationsComponent } from './applications/applications.component';
+import { PeopleComponent } from './people/people.component';
+import { NewsComponent } from './news/news.component';
 
 export const MaterialRoutes: Routes = [
   {
@@ -81,5 +85,21 @@ export const MaterialRoutes: Routes = [
   {
     path: 'slide-toggle',
     component: SlideToggleComponent
+  },
+  {
+    path: 'test',
+    component: TestComponent
+  },
+  {
+    path: 'apps',
+    component: ApplicationsComponent
+  },
+  {
+    path: 'people',
+    component: PeopleComponent
+  },
+  {
+    path: 'news',
+    component: NewsComponent
   }
 ];

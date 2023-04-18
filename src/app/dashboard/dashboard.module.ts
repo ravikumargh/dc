@@ -11,6 +11,16 @@ import { OurVisiterComponent } from './dashboard-components/our-visiter/our-visi
 import { ProfileComponent } from './dashboard-components/profile/profile.component';
 import { ContactsComponent } from './dashboard-components/contacts/contacts.component';
 import { ActivityTimelineComponent } from './dashboard-components/activity-timeline/activity-timeline.component';
+import { MatCarouselModule } from 'ng-mat-carousel';
+import { EventComponent } from './event/event.component';
+import { EventListComponent } from './event-list/event-list.component';
+import { StockComponent } from './stock/stock.component';
+import { GoldComponent } from './gold/gold.component';
+import { SalesComponent } from './sales/sales.component';
+import { CircularComponent } from './circular/circular.component';
+import { StockPriceComponent } from './stock-price/stock-price.component';
+import { GoldPriceComponent } from './gold-price/gold-price.component';
+import { ApplicationsComponent } from './applications/applications.component';
 
 @NgModule({
   imports: [
@@ -18,8 +28,11 @@ import { ActivityTimelineComponent } from './dashboard-components/activity-timel
     DemoMaterialModule,
     FlexLayoutModule,
     NgApexchartsModule,
-    RouterModule.forChild(DashboardRoutes)
+    RouterModule.forChild(DashboardRoutes),
+    MatCarouselModule.forRoot(),
   ],
-  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent]
+  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent, EventComponent, EventListComponent, StockComponent,StockPriceComponent, GoldComponent, SalesComponent, CircularComponent, GoldPriceComponent, ApplicationsComponent],
+  exports: [ApplicationsComponent]
+
 })
 export class DashboardModule {}

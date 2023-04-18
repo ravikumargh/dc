@@ -1,0 +1,11 @@
+.icon-box {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  
+.icon-text{
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}  

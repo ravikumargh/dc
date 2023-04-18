@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-header class="bg-warning text-white">
+        <mat-card-title><mat-icon class="card-icon">currency_rupee</mat-icon>Gold price today</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="p-0">
+      <mat-list>
+        <mat-list-item *ngFor="let gold of golds">
+          <mat-icon mat-list-icon  class="text-red">arrow_downward</mat-icon>
+          <div mat-line>{{gold.name}}</div>
+          <div mat-line> {{gold.updated}} </div>
+        </mat-list-item>
+       
+      </mat-list>
+    </mat-card-content>
+</mat-card>

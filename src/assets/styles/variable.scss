@@ -14,7 +14,7 @@ $headingfont: 'Poppins', sans-serif;
 
 /*Material Theme Colors*/
 
-$primary: mat-palette($mat-purple, 600);
+$primary: mat-palette($mat-purple, 400);
 $accent: mat-palette($mat-indigo, 500);
 $warn: mat-palette($mat-pink, 500);
 $theme: mat-light-theme($primary, $accent, $warn);
@@ -92,6 +92,7 @@ $yellow: #a0aec4;
 $purple: #7460ee;
 $blue: #02bec9;
 $megna: #00897b;
+$green: #00aa17;
 
 /*Extra Variable*/
 $rgt: right;
@@ -102,3 +103,7 @@ $card-brd: #d7dfe3;
 $dark-text: #848a96;
 $radius: 4px;
 $form-brd: #d9d9d9;
+$purple: #92278f;
+$blue-dark: #007FA3;
+
+

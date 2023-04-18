@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-header class="bg-info text-white">
+        <mat-card-title>
+          <mat-icon class="card-icon">calendar_month</mat-icon> Circulars</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="p-5">
+      <mat-nav-list class="comment-widgets">
+ 
+        <mat-list-item (click)="onSelect(message)" [class.active]="message === selectedMessage"
+          *ngFor="let message of messagesLatest" class="comment-row p-0">
+          
+          <h3 matLine> {{message.title}} </h3>
+        </mat-list-item>
+      </mat-nav-list>
+      <mat-card-actions>
+        <button mat-raised-button color="accent">View all</button>
+      </mat-card-actions>
+  </mat-card-content>
+    
+     
+</mat-card>

@@ -1,0 +1,16 @@
+/*******************/
+/*Comment widgets*/
+/*******************/
+
+.comment-widgets {
+    position: relative;
+    margin-bottom: 10px;
+    .comment-row {
+        border-left: 3px solid #fff;
+        padding: 15px;
+        &:hover,
+        &.active {
+            border-color: #1e88e5;
+        }
+    }
+}

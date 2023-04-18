@@ -1,0 +1,59 @@
+<div fxLayout="row wrap">
+    <div fxFlex="100">
+      <mat-card>
+        <mat-card-content>
+          <div fxLayout="row wrap" class="align-items-center">
+            <div fxFlex.gt-md="100" fxFlex.gt-lg="100" fxFlex="100">
+              <mat-form-field>
+                <input matInput class="p-b-0" placeholder="Search people here..." [(ngModel)]="searchText">
+              </mat-form-field>
+            </div>
+    
+
+              <div fxLayout="row"  fxLayoutAlign="center center" fxFlex.gt-md="100" fxFlex.gt-lg="100" fxFlex="100">
+                <button   class="mr-1" mat-icon-button title="Grid view">
+                  <mat-icon>view_comfy</mat-icon>
+                </button>
+                <button   class="mr-1" mat-icon-button title="List view">
+                    <mat-icon>view_list</mat-icon>
+                  </button>
+                <div fxFlex>
+                  <div class="font-14"> About 11,090 results</div>
+                </div>
+                 
+                 
+                <button mat-button [matMenuTriggerFor]="menu">Sort by name</button>
+                <mat-menu #menu="matMenu">
+                <button mat-menu-item>Name Ascending</button>
+                <button mat-menu-item>Name Descending</button>
+                </mat-menu>
+
+                 
+              </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>
+  <div fxLayout="row wrap">
+    <div fxFlex.gt-lg="25" fxFlex.gt-md="33.33" fxFlex.gt-xs="100" fxFlex="100"
+      *ngFor="let contact of contacts  ">
+      <mat-card>
+        <mat-card-content class="text-center">
+          <img src="{{ contact.contactimg }}" class="img-circle border p-5" width="100">
+          <h4 class="card-title m-t-15 m-b-0">{{ contact.contactname }}</h4>
+          <small class="text-muted">{{ contact.contactpost }}</small>
+           
+          <div class="m-t-20">
+            <span>
+              {{ contact.contactadd }}
+              <br />
+              <br />
+              <i class="fa fa-phone m-r-10"></i>{{ contact.contactno }}</span>
+          </div>
+        </mat-card-content>
+         
+      </mat-card>
+    </div>
+  </div>
+  
