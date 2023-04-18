@@ -38,7 +38,7 @@ import { CircularHeaderComponent } from './layouts/circular/header/header.compon
     FlexLayoutModule,
     HttpClientModule,
     SharedModule,
-    RouterModule.forRoot(AppRoutes)
+    RouterModule.forRoot(AppRoutes, { useHash: true })
   ],
   providers: [
     {
