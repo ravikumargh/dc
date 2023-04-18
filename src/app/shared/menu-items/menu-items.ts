@@ -9,6 +9,7 @@ export interface Menu {
 
 const MENUITEMS = [
   { state: 'dashboard', name: 'Dashboard', type: 'link', icon: 'av_timer' },
+  { state: 'circular', name: 'Circular', type: 'link', icon: 'av_timer' },
   { state: '', name: 'Aadhaar Enrolment  Centres', type: 'link', icon: '' },
   { state: '', name: 'ADC (IB/MB/DC)', type: 'link', icon: '' },
   { state: '', name: 'Additional links', type: 'link', icon: '' },

@@ -2,6 +2,7 @@
 
 import { MediaMatcher } from '@angular/cdk/layout';
 import {ChangeDetectorRef, Component,OnDestroy,AfterViewInit} from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItems } from '../../shared/menu-items/menu-items';
 
 
@@ -19,7 +20,8 @@ export class CircularComponent implements OnDestroy, AfterViewInit {
   constructor(
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher,
-    public menuItems: MenuItems
+    public menuItems: MenuItems,
+    private router: Router
   ) {
     this.mobileQuery = media.matchMedia('(min-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
@@ -30,5 +32,8 @@ export class CircularComponent implements OnDestroy, AfterViewInit {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
   ngAfterViewInit() {}
+  openDashboard(){
+    this.router.navigate(['/dashboard'])
+  }
 }
 
