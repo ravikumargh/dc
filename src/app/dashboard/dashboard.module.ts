@@ -23,6 +23,7 @@ import { GoldPriceComponent } from './gold-price/gold-price.component';
 import { ApplicationsComponent } from './applications/applications.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { HolidayComponent } from './holiday/holiday.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,7 @@ import { HolidayComponent } from './holiday/holiday.component';
     RouterModule.forChild(DashboardRoutes),
     MatCarouselModule.forRoot(),
   ],
-  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent, EventComponent, EventListComponent, StockComponent,StockPriceComponent, GoldComponent, SalesComponent, CircularComponent, GoldPriceComponent, ApplicationsComponent, QuizComponent, HolidayComponent],
+  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent, EventComponent, EventListComponent, StockComponent,StockPriceComponent, GoldComponent, SalesComponent, CircularComponent, GoldPriceComponent, ApplicationsComponent, QuizComponent, HolidayComponent, PostComponent],
   exports: [ApplicationsComponent]
 
 })

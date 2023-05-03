@@ -3,3 +3,10 @@
     background: #92278f;
     color: white;
 }
+
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
