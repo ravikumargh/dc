@@ -21,6 +21,8 @@ import { CircularComponent } from './circular/circular.component';
 import { StockPriceComponent } from './stock-price/stock-price.component';
 import { GoldPriceComponent } from './gold-price/gold-price.component';
 import { ApplicationsComponent } from './applications/applications.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { HolidayComponent } from './holiday/holiday.component';
 
 @NgModule({
   imports: [
@@ -31,7 +33,7 @@ import { ApplicationsComponent } from './applications/applications.component';
     RouterModule.forChild(DashboardRoutes),
     MatCarouselModule.forRoot(),
   ],
-  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent, EventComponent, EventListComponent, StockComponent,StockPriceComponent, GoldComponent, SalesComponent, CircularComponent, GoldPriceComponent, ApplicationsComponent],
+  declarations: [DashboardComponent, SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent, EventComponent, EventListComponent, StockComponent,StockPriceComponent, GoldComponent, SalesComponent, CircularComponent, GoldPriceComponent, ApplicationsComponent, QuizComponent, HolidayComponent],
   exports: [ApplicationsComponent]
 
 })
